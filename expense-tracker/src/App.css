@@ -1,9 +1,31 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
 .App {
   text-align: center;
+  width: 80%;
+  max-width: 800px;
+  /* Increased max-width */
+  background: white;
+  padding: 40px;
+  /* Increased padding */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  /* Enhanced shadow */
+  border-radius: 12px;
+  /* Slightly larger border-radius */
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 50vmin;
+  /* Increased logo size */
   pointer-events: none;
 }
 
@@ -15,24 +37,71 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 80vh;
+  /* Adjusted height for better spacing */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: calc(12px + 2vmin);
+  /* Larger font size */
   color: white;
 }
 
 .App-link {
   color: #61dafb;
+  font-size: 1.2em;
+  /* Slightly larger link text */
 }
 
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form div {
+  margin-bottom: 20px;
+  /* Increased margin for form fields */
+}
+
+input,
+button {
+  padding: 10px;
+  /* Larger padding for input and button */
+  font-size: 1em;
+  /* Increased font size */
+}
+
+button {
+  cursor:pointer;
+  border: none;
+  background-color: hwb(123 1% 0%);
+  color: black;
+  border-radius: 3px;
+}
+
+ul {
+  list-style:none;
+  padding: 0;
+}
+
+li {
+  margin: 15px 0;
+  /* Increased margin between list items */
+}
+
+li button {
+  margin-left: 10px;
+  /* Fix margin for buttons in list items */
 }
